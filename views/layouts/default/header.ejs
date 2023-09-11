@@ -1,0 +1,22 @@
+<header class="py-2 mb-4" style="background-color: rgb(48, 70, 132); border-bottom: 1rem; border-color: black;">
+    <div class="container">
+      <div class="row justify-content-between">
+        
+        <div class="col-auto align-content-center d-flex" style="flex-wrap: inherit;">
+            <a href="/listaProdutos" style="text-decoration: none;"><h3 class="text-light">Cadastro de produtos</h3></a>
+        </div>
+
+        <ul class="nav col-auto align-content-center">
+          <li><a href="/listaProdutos" class="nav-link text-light">Produtos</a></li>
+          <li><a href="/cadastroProduto" class="nav-link text-light">Cadastrar produto</a></li>
+        </ul>
+
+        <div class="col-auto align-content-center d-flex mt-3" style="flex-wrap: inherit;">
+          <% if (usuario) { %>
+            <p class="text-light fw-bold">User: <span style="text-decoration: underline; padding-left: 0.5rem;"><%= usuario.nome %></span></p>
+          <% } %>
+        </div>
+
+      </div>
+    </div>
+</header>

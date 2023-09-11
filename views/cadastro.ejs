@@ -1,0 +1,53 @@
+<section class="h-100">
+	<div class="container h-100">
+		<div class="row justify-content-sm-center h-100">
+			<div class="col-xxl-4 col-xl-5 col-lg-5 col-md-7 col-sm-9">
+				<div class="text-center my-5">
+				</div>
+				<div class="card shadow-lg">
+					<div class="card-body p-5">
+						<h1 class="fs-4 card-title fw-bold mb-4 text-center">CADASTRE-SE</h1>
+						<% if (erro) { %>
+							<p style="color: rgb(194, 2, 2);"><%= erro %></p>
+						<% } %>
+						<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+
+							<div class="mb-3">
+								<label class="mb-2 text-muted" for="nome">Nome</label>
+								<input id="nome" type="text" class="form-control" name="nome" value="" required autofocus>
+							</div>
+
+							<div class="mb-3">
+								<label class="mb-2 text-muted" for="email">Email</label>
+								<input id="email" type="text" class="form-control" name="email" value="" required autofocus>
+							</div>
+
+							<div class="mb-3">
+								<div class="mb-2 w-100">
+									<label class="text-muted" for="senha">Senha</label>
+								</div>
+								<input id="senha" type="password" class="form-control" name="senha" required>
+							</div>
+
+							<div class="mb-3">
+								<div class="mb-2 w-100">
+									<label class="text-muted" for="senha2">Confirmar senha</label>
+								</div>
+								<input id="senha2" type="password" class="form-control" name="senha2" required>
+							</div>
+
+							
+							<a href="/login" class="d-flex justify-content-center mt-4">Já tem uma conta? Faça login</a>
+
+							<div class="d-flex align-items-center mt-4">
+								<button type="submit" class="btn btn-primary ms-auto mx-auto p-4 pt-2 pb-2">
+									Cadastrar-se
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

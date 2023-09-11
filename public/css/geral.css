@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/img/unsplash_kKvQJ6rK6S4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 60% 30%;
+}
+
+.form-check-input {
+    background-image: none;
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: rgb(70, 94, 160) !important;
+    border-color: rgb(70, 94, 160) !important;
+}
+
+.form-check-input:hover {
+    background-color: rgb(192, 211, 255) !important;
+}
+
+div h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 0.7rem;
+}
+
+button:hover {
+    background-color: rgb(89, 117, 195) !important;
+}
+
+ul li a:hover {
+    color: rgb(255, 230, 160) !important;
+}
+
+#titulo:hover {
+    color: rgb(231, 231, 231);
+}
+
+#image {
+    width: 17rem;
+    height: 17rem;
+}
