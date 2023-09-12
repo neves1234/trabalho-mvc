@@ -5,7 +5,7 @@ let produtos = [];
 
 function cadastroProduto(req, res) {
 
-  res.render('cadastroProduto');
+  res.render('listaProduto');
 }
 
 async function todosProdutos(req, res) {
