@@ -15,7 +15,7 @@ function login(req, res) {
         url: process.env.URL,
         title: "Login"
     };
-    res.render('cadastroProduto');
+    res.render('login');
 }
 
 function cadastro(req, res) {
