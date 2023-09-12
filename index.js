@@ -61,7 +61,6 @@ app.use((req, res, next) => {
   next();
 });
 
-
 app.get('/login', (req, res) => {
     app.set('layout', './layouts/default/login');
     usuarioController.login(req, res);
@@ -81,7 +80,6 @@ app.post('/cadastro', (req, res) => {
 });
 
 app.get('/cadastroProduto', (req, res) => {
-    app.set('layout');
     produtosController.cadastroProduto(req, res);
 });
 
@@ -90,14 +88,10 @@ app.post('/cadastroProduto', upload.single('imagem'), (req, res) => {
 });
 
 app.get('/listaProdutos', (req, res) => {
-    app.set('layout', './listaProdutos');
-    //produtosController.todosProdutos(req, res);
+    produtosController.todosProdutos(req, res);
 });
 
-
-
-
-app.get('/cadastroProduto/delete/:id_produto', (req, res) => {
+app.get('/cadastroProduto/delete/:idProduto', (req, res) => {
   produtosController.deleteProduto(req, res);
 });
 

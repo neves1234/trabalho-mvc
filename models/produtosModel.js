@@ -38,7 +38,7 @@ class ProdutoModel {
 
 
     static async deleteProduto(idProduto) {
-        let res = await database.query(`DELETE FROM produto WHERE id_produto = ${idProduto}`);
+        let res = await database.query(`DELETE FROM produto WHERE idProduto = ${idProduto}`);
         return true;
     }
 }
