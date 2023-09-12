@@ -18,9 +18,9 @@ class ProdutoModel {
         return resp;
     }
 
-    static async cadastroProduto(nome, descricao, valor, estoque, categoria, imagem) {
+    static async cadastroProduto(Nome, Descricao, valor, estoque, categoria, imagem) {
         try {
-            let sql = `INSERT INTO produto (nome, descricao, valor, estoque, categoria, imagem) VALUES ('${nome}', '${descricao}', ${valor}, ${estoque}, '${categoria}', '${imagem}')`;
+            let sql = `INSERT INTO produto (nome, descricao, valor, estoque, categoria, imagem) VALUES ('${Nome}', '${Descricao}', ${valor}, ${estoque}, '${categoria}', '${imagem}')`;
             let resp = await database.query(sql);
             return resp;
         } catch (error) {
