@@ -31,7 +31,7 @@ function cadastro(req, res) {
         url: process.env.URL,
         title: "Cadastro"
     };
-    res.render('cadastroProduto');
+    res.render('cadastro');
 }
 
 async function autenticar(req, res) {
