@@ -31,7 +31,7 @@ async function efetivarCadastro(req, res) {
   let resp = await produtosModel.cadastroProduto(nome, descricao, valor, estoque, categoria, imagem);
   if (resp.affectedRows > 0) {
       console.log('Você adicionou um novo produto');
-      res.redirect('/listaProdutos');
+      res.redirect('listaProdutos');
   } else {
       console.log('Falha em cadastrar novo produto');
       res.redirect('/cadastroProduto');

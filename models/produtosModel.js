@@ -13,7 +13,7 @@ class ProdutoModel {
     }
 
     static async todosProdutos(){
-        let sql = `SELECT * FROM produto ORDER BY id_produto DESC`;
+        let sql = `SELECT * FROM produto ORDER BY idProduto DESC`;
         let resp = await database.query(sql);
         return resp;
     }
@@ -30,7 +30,7 @@ class ProdutoModel {
     }
 
     static async pegarProduto(id){
-        let sql = `SELECT * FROM produto WHERE id_produto = '${id}'`;
+        let sql = `SELECT * FROM produto WHERE idProduto = '${id}'`;
         let resp = await database.query(sql);
         return resp;
     }
